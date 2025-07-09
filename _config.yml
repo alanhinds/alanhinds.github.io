@@ -26,7 +26,7 @@ author:
   name             : "Alan Hinds"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
+  location         : #"Earth"
   employer         : "Cornell University"
   uri              : # URL
   email            : "arh245@cornell.edu" 
