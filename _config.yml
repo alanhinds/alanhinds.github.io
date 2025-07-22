@@ -22,11 +22,11 @@ repository               : "alanhinds/alanhinds.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "Alan Head Shot.jpg"
   name             : "Alan Hinds"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : #"Earth"
+  bio              : "Agricultural economist interested in agricultural policy and farmland markets."
+  location         : "363 Warren Hall"
   employer         : "Cornell University"
   uri              : # URL
   email            : "arh245@cornell.edu" 
@@ -85,6 +85,14 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  working_paper:
+    title: 'Working Papers'
+
+# Extension Category - The following the list of publication categories and their headings
+extension_category:
+  policybrief:
+    title: 'Poliy Brief'    
+
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -228,6 +236,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  extension:
+    output: true
+    permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -285,7 +296,15 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-
+  # extension
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
 
 # Sass/SCSS
 sass:

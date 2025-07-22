@@ -7,39 +7,47 @@ redirect_from:
   - /resume
 ---
 
+You can find my full CV [here](http://alanhinds.github.io/files/Hinds_Alan_CV.pf).
+
 {% include base_path %}
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Applied Economics and Management, Cornell University, 2028 (expected)
+  * Field: Food and Agricultural Economics
+* M.S. in Agricultural Economics, Kansas State University, 2023
+* B.S. in Agriculture, Kansas State University, 2021
+  * Major: Agricultural Economics
+  * Specialty Option and Minor: Animal Sciences and Industry
 
-Work experience
+Research experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2024-2025: Research Assistant
+  * Cornell University Department of Applied Economics and Management
+  * Supervisor: Becca Jablonski
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Summer 2022: USDA Economic Research Service Pathways Intern
+  * Market and Trade Economics Division: Animal Products and Cost of Production Branch
+  * Supervisor: Dr. Adriana Valcu-Lisman
+
+* 2021-2023: Research Assistant
+  * Kansas State University Department of Agricutural Economics
+  * Supervisor: Dr. Jennifer Ifft
+
+* 2020-2021: Research Assistant
+  * Kansas State University Department of Geography
+  * Supervisor: Dr. Audrey Joslin
   
-Skills
+Professional experience
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+
+* 2020-2021: Economics Intern
+  * Kansas Department of Agriculture Division of Agricultural Marketing
+
+* 2020: International Trade / Export Promotion Intern
+  * Kansas Department of Agriculture Division of Agricultural Marketing (joint)
+  * Food Export Midwest (joint)
 
 Publications
 ======
@@ -59,6 +67,4 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+
