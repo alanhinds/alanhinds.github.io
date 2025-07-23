@@ -8,3 +8,4 @@ date: 2023-03-18
 location: "Kansas City, MO, USA"
 ---
 
+Presented a portion of my master's thesis.
