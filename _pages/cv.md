@@ -13,13 +13,19 @@ You can find my full CV [here](http://alanhinds.github.io/files/Hinds_Alan_CV.pf
 
 Education
 ======
-* Ph.D in Applied Economics and Management, Cornell University, 2028 (expected)
+* PhD in Applied Economics and Management, Cornell University, 2028 (expected)
   * Field: Food and Agricultural Economics
-* M.S. in Agricultural Economics, Kansas State University, 2023
-* B.S. in Agriculture, Kansas State University, 2021
+* MS in Agricultural Economics, Kansas State University, 2023
+* BS in Agriculture, Kansas State University, 2021
   * Major: Agricultural Economics
   * Specialty Option and Minor: Animal Sciences and Industry
 
+Publications
+======
+  <ul>{% for post in site.publications reversed %}
+    {% include archive-single-cv.html %}
+  {% endfor %}</ul>
+  
 Research experience
 ======
 
@@ -49,11 +55,6 @@ Professional experience
   * Kansas Department of Agriculture Division of Agricultural Marketing (joint)
   * Food Export Midwest (joint)
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
   
 Talks
 ======
