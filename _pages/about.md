@@ -14,6 +14,6 @@ I am a PhD student studying agricultural economics in the [Dyson School of Appli
 
 Beyond research, I am currently organizing the "Dyson Food and Agriculture Tour." This tour aims to provide an opportunity for faculty and graduate students to visit food and agriculture facilities across Cornell and New York State. These visits will help motivate future research, foster connections with industry, and provide educational experiences beyond the classroom.
 
-Before attending Cornell, I received my B.S. and M.S. from the Department of Agricultural Economics at Kansas State University.
+Before attending Cornell, I received my BS and MS from the Department of Agricultural Economics at Kansas State University.
 
 ----
