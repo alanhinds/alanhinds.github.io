@@ -158,7 +158,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "GTM-5DJG2MPK" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  provider               :  "google-analytics-4" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
     tracking_id          : "GTM-5DJG2MPK"
 
