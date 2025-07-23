@@ -13,4 +13,4 @@ gem 'github-pages'
 gem 'connection_pool', '2.5.0'
 gem 'tzinfo-data'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
-gem 'fiddle'
+# gem 'fiddle' #Uncomment depending on device
