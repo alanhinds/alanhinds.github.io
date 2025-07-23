@@ -88,7 +88,7 @@ publication_category:
   working_paper:
     title: 'Working Papers'
 
-# Extension Category - The following the list of publication categories and their headings
+# Extension Category - The following the list of extension categories and their headings
 extension_category:
   policybrief:
     title: 'Policy Briefs'    
@@ -299,7 +299,7 @@ defaults:
   # extension
   - scope:
       path: ""
-      type: publications
+      type: extension
     values:
       layout: single
       author_profile: true
