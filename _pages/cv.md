@@ -9,6 +9,4 @@ redirect_from:
 
 If the web viewer is not working, you can also download my CV [here](http://alanhinds.github.io/files/Hinds_Alan_CV.pdf).
 
-<embed src="http://alanhinds.github.io/files/Hinds_Alan_CV.pdf" type="application/pdf" width="100%" height="800px"/>
-
-
+<iframe src="https://docs.google.com/viewer?url=http://alanhinds.github.io/files/Hinds_Alan_CV.pdf&embedded=true" style="width:100%; height:600px;" frameborder="0"></iframe>
