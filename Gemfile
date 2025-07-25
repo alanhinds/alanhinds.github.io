@@ -14,3 +14,4 @@ gem 'connection_pool', '2.5.0'
 gem 'tzinfo-data'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 # gem 'fiddle' #Uncomment depending on device
+gem 'jekyll-target-blank'
