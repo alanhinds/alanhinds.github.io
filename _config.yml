@@ -337,6 +337,7 @@ whitelist:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+  - jekyll-target-blank
 
 
 # Archives
