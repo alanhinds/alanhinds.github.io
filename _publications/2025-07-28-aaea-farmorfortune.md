@@ -8,6 +8,7 @@ date: 2025-07-28
 venue: '2025 Agricultural & Applied Economics Association Annual Meeting'
 paperurl: 'http://alanhinds.github.io/files/WP__Succession_and_Taxes.pdf'
 citation: 'Preliminary, please do not cite without permission.'
+related_talk: 2025-07-28-invitedpaper.md
 ---
 
 Abstract
