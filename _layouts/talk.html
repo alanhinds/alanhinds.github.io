@@ -69,13 +69,13 @@ layout: default
             <iframe src="https://docs.google.com/viewer?url={{ page.slidesurl }}&embedded=true" style="width:100%; height:600px;" frameborder="0"></iframe>
 
             {% if related_pub.paperurl %}
-              <p><a href="{{ related_pub.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
+              <p style="font-size: smaller"><a href="{{ related_pub.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
               {% else %}
-                <p><a href="{{ page.slidesurl }}">Download Slides</a></p>
+                <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
             {% endif %}
           {% else %}
             {% if related_pub.paperurl %}
-              <p><a href="{{ related_pub.paperurl }}">Download Paper</a></p>
+              <p style="font-size: smaller"><a href="{{ related_pub.paperurl }}">Download Paper</a></p>
             {% endif %}
           {% endif %}
 
