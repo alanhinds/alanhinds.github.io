@@ -14,6 +14,14 @@ layout: default
   {% endunless %}
 {% endif %}
 
+{% if page.related_publication %}
+          {% assign pub = site.publications | where: "path", "_publications/" | map: "path" | join: "," %}
+          {% assign related_pub = site.publications | where: "path", "_publications/" | where: "path", "_publications/" | where_exp: "item", "item.path contains page.related_publication" | first %}
+          
+          {% assign related_pub = site.publications | where: "path", "publications/" | where_exp: "item", "item.path contains page.related_publication" | first %}
+          {% assign related_pub = site.publications | where_exp: "item", "item.path contains page.related_publication" | first %}
+{% endif %}
+
 <div id="main" role="main">
   {% include sidebar.html %}
 
@@ -37,11 +45,41 @@ layout: default
         {% endif %}
         {% if page.talk_type %}<p>{{page.talk_type}} at {{ page.venue }},  {{page.location}} {% endif %}
 
+          
         </header>
       {% endunless %}
 
       <section class="page__content" itemprop="text">
+        {% if related_pub %}          
+          {% if related_pub.title %}
+              <p>Presented work from <a href="{{ related_pub.url }}">{{ related_pub.title }}</a> during the {{page.session}} {{page.sessiontype}} session.</p>
+            {% else %}
+          {% endif %}
+        {% else %}
+          {% if page.session %}
+            {% if page.sessiontype %}
+              <p>Presented during the {{page.session}} {{page.sessiontype}} session.</p>
+            {% endif %}
+            {% endif %}
+        {% endif %}
+        
         {{ content }}
+
+        {% if page.slidesurl %}
+            <iframe src="https://docs.google.com/viewer?url={{ page.slidesurl }}&embedded=true" style="width:100%; height:600px;" frameborder="0"></iframe>
+
+            {% if related_pub.paperurl %}
+              <p><a href="{{ related_pub.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
+              {% else %}
+                <p><a href="{{ page.slidesurl }}">Download Slides</a></p>
+            {% endif %}
+          {% else %}
+            {% if related_pub.paperurl %}
+              <p><a href="{{ related_pub.paperurl }}">Download Paper</a></p>
+            {% endif %}
+          {% endif %}
+
+
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
