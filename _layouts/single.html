@@ -14,6 +14,14 @@ layout: default
   {% endunless %}
 {% endif %}
 
+{% if page.related_talk %}
+          {% assign talk = site.talks | where: "path", "talks/" | map: "path" | join: "," %}
+          {% assign related_talk = site.talks | where: "path", "talks/" | where: "path", "_talks/" | where_exp: "item", "item.path contains page.related_talk" | first %}
+          
+          {% assign related_talk = site.talks | where: "path", "talks/" | where_exp: "item", "item.path contains page.related_talk" | first %}
+          {% assign related_talk = site.talks | where_exp: "item", "item.path contains page.related_talk" | first %}
+{% endif %}
+
 <div id="main" role="main">
   {% include sidebar.html %}
 
@@ -46,8 +54,41 @@ layout: default
 
       <section class="page__content" itemprop="text">
         {{ content }}
+        
+        {% if page.category == 'policybrief' %}
+          {% if page.paperurl %}
+              <iframe src="https://docs.google.com/viewer?url={{ page.paperurl }}&embedded=true" style="width:100%; height:600px;" frameborder="0"></iframe>
+          {% endif %}        
+        {% endif %}
 
-        {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
+        {% if related_talk %}
+          {% if page.citation and page.paperurl and related_talk.slidesurl and page.bibtexurl %}
+          <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ related_talk.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+          {% elsif page.citation and page.paperurl and related_talk.slidesurl %}
+            <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ related_talk.slidesurl }}">Download Slides</a></p>
+          {% elsif page.citation and page.paperurl and page.bibtexurl %}
+            <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+          {% elsif page.citation and page.paperurl %}
+            <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a></p>
+          {% elsif page.citation and related_talk.slidesurl and page.bibtexurl %}
+            <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ related_talk.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+          {% elsif page.citation and related_talk.slidesurl %}
+            <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ related_talk.slidesurl }}">Download Slides</a></p>
+          {% elsif related_talk.slidesurl and page.bibtexurl %}
+            <p style="font-size: smaller"><a href="{{ related_talk.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+          {% elsif page.paperurl and page.bibtexurl %}
+            <p style="font-size: smaller"><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+          {% elsif page.citation and page.bibtexurl %}
+            <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+          {% elsif page.citation %}
+            <p style="font-size: smaller">Recommended citation: {{ page.citation }}</p>
+          {% elsif related_talk.slidesurl %}
+            <p style="font-size: smaller"><a href="{{ page.related_talk.slidesurl }}">Download Slides</a></p>
+          {% elsif page.bibtexurl %}
+            <p style="font-size: smaller"><a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+          {% endif %}
+        {% else %}
+          {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a> | <a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
         {% elsif page.citation and page.paperurl and page.slidesurl %}
           <p style="font-size: smaller">Recommended citation: {{ page.citation }}<br /><a href="{{ page.paperurl }}">Download Paper</a> | <a href="{{ page.slidesurl }}">Download Slides</a></p>
@@ -71,6 +112,7 @@ layout: default
           <p style="font-size: smaller"><a href="{{ page.slidesurl }}">Download Slides</a></p>
         {% elsif page.bibtexurl %}
           <p style="font-size: smaller"><a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
+        {% endif %}
         {% endif %}
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
