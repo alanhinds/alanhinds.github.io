@@ -79,14 +79,21 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
   manuscripts:
     title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+  under_review:
+    title: 'Under Review'
   working_paper:
     title: 'Working Papers'
+  conferences:
+    title: 'Conference Papers'
+  in_progress:
+    title: 'In Progress'
+  books:
+    title: 'Books'
+
+  
+  
 
 # Extension Category - The following the list of extension categories and their headings
 extension_category:
