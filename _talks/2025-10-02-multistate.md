@@ -8,5 +8,3 @@ date: 2025-10-01
 related_publication: 2025-10-29-maritalproperty.md
 location: "Omaha, NE, USA"
 ---
-
-Presented the early stages of a dissertation chapter.

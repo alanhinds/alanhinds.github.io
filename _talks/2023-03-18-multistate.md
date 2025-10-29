@@ -7,5 +7,3 @@ venue: "Joint Meeting of SSC-76: Economics and Management of Risk in Agriculture
 date: 2023-03-18
 location: "Kansas City, MO, USA"
 ---
-
-Presented a portion of my master's thesis.
