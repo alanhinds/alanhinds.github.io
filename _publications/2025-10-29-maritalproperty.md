@@ -6,6 +6,7 @@ permalink: /publication/2025-10-29-maritalproperty
 excerpt: ''
 date: 2025-10-17
 venue: 'In Progress'
+related_talk: 2025-10-02.md
 citation: 'Hinds, A. and N. Miller. "Community Property, Taxes, and Estate Planning: How Marital Property Regimes Affect Farmland Markets and the Lock-in Effect."'
 ---
 
