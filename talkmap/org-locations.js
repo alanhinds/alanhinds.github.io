@@ -10,7 +10,7 @@ var addressPoints = [
     -77.0363849
   ],
   [
-    "Familial Intentions: Farmers' Farmland Decisions and Succession Planning Under Uncertainty<br />SSC-76: Economics and Management of Risk in Agriculture and Natural Resources; Kansas City, MO, USA",
+    "Familial Intentions: Farmers' Farmland Decisions and Succession Planning Under Uncertainty<br />SCC-76: Economics and Management of Risk in Agriculture and Natural Resources; Kansas City, MO, USA",
     39.100105,
     -94.5781416
   ],
@@ -35,7 +35,7 @@ var addressPoints = [
     -75.9125187
   ],
   [
-    "Modeling U.S. Sorghum Export Destinations During Multiple Trade Shocks of the U.S.-China Trade War<br />SSC-76: Economics and Management of Risk in Agriculture and Natural Resources; Kansas City, MO, USA",
+    "Modeling U.S. Sorghum Export Destinations During Multiple Trade Shocks of the U.S.-China Trade War<br />SCC-76: Economics and Management of Risk in Agriculture and Natural Resources; Kansas City, MO, USA",
     39.100105,
     -94.5781416
   ]
