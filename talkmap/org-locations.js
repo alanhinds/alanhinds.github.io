@@ -1,22 +1,42 @@
 var addressPoints = [
   [
-    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
-    51.4893335,
-    -0.14405508452768728
+    "Agricultural Land Turnover and Why it Matters<br />Joint Meeting of SCC-76: Economics and Management of Risk in Agriculture and Natural Resources and NC-1177: Agricultural and Rural Finance Markets in Transition; Kansas City, MO, USA",
+    39.100105,
+    -94.5781416
   ],
   [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
+    "Determinants of Kansas Farmland Transaction Frequency<br />2023 Agricultural & Applied Economics Association Annual Meeting; Washington D.C., USA",
+    38.8950982,
+    -77.0363849
   ],
   [
-    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
-    34.0536909,
-    -118.242766
+    "Familial Intentions: Farmers' Farmland Decisions and Succession Planning Under Uncertainty<br />SSC-76: Economics and Management of Risk in Agriculture and Natural Resources; Kansas City, MO, USA",
+    39.100105,
+    -94.5781416
   ],
   [
-    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7792588,
-    -122.4193286
+    "Farm or Fortune? The Role of Heirs' Intentions and Tax Policies in Farmland Succession Planning<br />2025 Agricultural & Applied Economics Association Annual Meeting; Denver, CO, USA",
+    39.7392364,
+    -104.984862
+  ],
+  [
+    "The Relationship Between Backyard Animal Keeping and Food Security Status in the United States<br />2025 Agricultural & Applied Economics Association Annual Meeting; Denver, CO, USA",
+    39.7392364,
+    -104.984862
+  ],
+  [
+    "The Implications of Farm Structure and Tax Policies for Estate Planning<br />NC-1177: Agricultural and Rural Finance Markets in Transition; Omaha, NE, USA",
+    41.2587459,
+    -95.9383758
+  ],
+  [
+    "New York Farmland Market Trends and the Impacts of Renewable Energy<br />Broome County Cornell Cooperative Extension Realtor Education Day; Binghamton, NY, USA",
+    42.098698,
+    -75.9125187
+  ],
+  [
+    "Modeling U.S. Sorghum Export Destinations During Multiple Trade Shocks of the U.S.-China Trade War<br />SSC-76: Economics and Management of Risk in Agriculture and Natural Resources; Kansas City, MO, USA",
+    39.100105,
+    -94.5781416
   ]
 ];
