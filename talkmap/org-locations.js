@@ -38,5 +38,10 @@ var addressPoints = [
     "Modeling U.S. Sorghum Export Destinations During Multiple Trade Shocks of the U.S.-China Trade War<br />SCC-76: Economics and Management of Risk in Agriculture and Natural Resources; Kansas City, MO, USA",
     39.100105,
     -94.5781416
+  ],
+  [
+    "Community Property, Taxes, and Estate Planning: How Marital Property Regimes Affect Farmland Markets and the Lock-in Effect<br />Cornell Dyson Food and Agricultural Economics Seminar; Ithaca, NY, USA",
+    42.4374175,
+    -76.5483724
   ]
 ];
