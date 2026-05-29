@@ -3,7 +3,7 @@ title: "AEM 2020 / PSYCH 2940: Better Decisions for Life, Love and Money"
 collection: teaching
 type: "Teaching assistant for undergraduate course"
 permalink: /teaching/2026-spring-teaching
-venue: "Cornell University, Department of Agricultural Economics and Management & Department of Psychology "
+venue: "Cornell University, Department of Applied Economics and Management & Department of Psychology "
 date: 2026-01-01
 location: "Ithaca, New York"
 has_content: true
