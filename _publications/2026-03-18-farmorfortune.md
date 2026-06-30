@@ -5,8 +5,8 @@ category: manuscripts
 permalink: /publication/2026-03-18-farmorfortune
 excerpt: ''
 date: 2026-03-18
-venue: 'Applied Economic Perspectives and Policy'
-citation: 'Hinds, A. 2026. “Farm or Fortune? The Role of Heirs'' Intentions and Tax Policies in Farmland Succession Planning.” Applied Economic Perspectives and Policy 1–17. https://doi.org/10.1002/aepp.70061.'
+venue: 'Applied Economic Perspectives and Policy (AEPP)'
+citation: 'Hinds, A. 2026. “Farm or Fortune? The Role of Heirs'' Intentions and Tax Policies in Farmland Succession Planning.” <i>Applied Economic Perspectives and Policy</i> 48, no. 3: 745&ndash;761. <a href="https://doi.org/10.1002/aepp.70061">https://doi.org/10.1002/aepp.70061</a>.'
 paperurl: 'https://onlinelibrary.wiley.com/share/author/MXD5IGSB57NED72FJRAM?target=10.1002/aepp.70061'
 
 
