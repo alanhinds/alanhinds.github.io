@@ -8,6 +8,7 @@ date: 2021-08-01
 location: "Manhattan, Kansas"
 has_content: true
 ---
+
 ### Course Instructor
 Dr. Jennifer Ifft
 
