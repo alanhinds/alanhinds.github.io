@@ -7,6 +7,7 @@ venue: "Cornell University, Department of Applied Economics and Management"
 date: 2025-08-01
 location: "Ithaca, New York"
 has_content: true
+excerpt: ''
 ---
 ### Course Instructor
 Dr. Stephen Shu

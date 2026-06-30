@@ -7,6 +7,7 @@ venue: "Cornell University, Department of Applied Economics and Management & Dep
 date: 2026-01-01
 location: "Ithaca, New York"
 has_content: true
+excerpt: ''
 ---
 ### Course Instructors
 Drs. Ted O'Donoghue (lead), Jay Russo, Tom Gilovich, Suzanne Shu, Bob Frank, and Bill Schulze

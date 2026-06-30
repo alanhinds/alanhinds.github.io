@@ -7,8 +7,8 @@ venue: "Kansas State University, Department of Agricultural Economics"
 date: 2021-08-01
 location: "Manhattan, Kansas"
 has_content: true
+excerpt: ''
 ---
-
 ### Course Instructor
 Dr. Jennifer Ifft
 
