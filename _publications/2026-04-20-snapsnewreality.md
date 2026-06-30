@@ -5,8 +5,8 @@ category: manuscripts
 permalink: /publication/2026-04-20-snapsnewreality
 excerpt: ''
 date: 2026-04-20
-venue: 'Applied Economics Education and Extension'
-citation: 'Huang, Z., W. Zhang, and A. Hinds. 2026. "SNAP''s New Reality: Expanded Work Requirements, Cost Shifts to States, and Benefit Adjustment Changes." Applied Economics Education and Extension 1-8. https://doi.org/10.71162/aeee.155443' 
+venue: 'Applied Economics Education and Extension (AEEE)'
+citation: 'Huang, Z., W. Zhang, and A. Hinds. 2026. "SNAP''s New Reality: Expanded Work Requirements, Cost Shifts to States, and Benefit Adjustment Changes." <i>Applied Economics Education and Extension</i> 1&ndash;8. <a href="https://doi.org/10.71162/aeee.155443">https://doi.org/10.71162/aeee.155443</a>.' 
 paperurl: 'https://doi.org/10.71162/aeee.155443'
 
 ---
