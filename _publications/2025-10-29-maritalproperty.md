@@ -7,7 +7,7 @@ excerpt: ''
 date: 2025-10-17
 venue: 'In Progress'
 related_talk: 2025-10-02.md
-citation: 'Hinds, A., N. Miller, and A. Shew. "Community Property, Taxes, and the Market for Local Assets." [Manuscript available upon request]'
+citation: 'Hinds, A., N. Miller, and A. Shew. <i>Community Property, Taxes, and the Market for Local Assets</i>. [Manuscript available upon request]'
 ---
 
 
