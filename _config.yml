@@ -97,8 +97,8 @@ publication_category:
 
 # Extension Category - The following the list of extension categories and their headings
 extension_category:
-  policybulletin:
-    title: 'Policy Bulletins'
+  bulletin:
+    title: 'Extension and Policy Bulletins'
   extensionbrief:
     title: 'Extension Briefs'   
 
