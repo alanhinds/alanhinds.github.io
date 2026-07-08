@@ -2,7 +2,7 @@
 title: "SNAP's New Reality: Expanded Work Requirements, Cost Shifts to States, and Benefit Adjustment Changes"
 collection: extension
 category: extensionbrief
-permalink: /extension/2026-06-01-SNAPSNewReality.md
+permalink: /extension/2026-06-01-SNAPSNewReality
 excerpt: ''
 date: 2026-06-01
 venue: 'Dyson Extension Briefs'
