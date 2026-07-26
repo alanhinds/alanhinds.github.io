@@ -9,4 +9,4 @@ location: "Binghamton, NY, USA"
 slidesurl: http://alanhinds.github.io/files/2026_Realtor_Education_Day_NY_Farmland_Market_and_Solar.pdf
 
 ---
-~25 Realtors
+Audience: ~25 Realtors
