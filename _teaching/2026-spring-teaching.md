@@ -9,6 +9,8 @@ location: "Ithaca, New York"
 has_content: true
 excerpt: ''
 ---
+Overall effectiveness rating: 4.43/5
+
 ### Course Instructors
 Drs. Ted O'Donoghue (lead), Jay Russo, Tom Gilovich, Suzanne Shu, Bob Frank, and Bill Schulze
 
