@@ -9,4 +9,4 @@ location: "Ithaca, NY, USA"
 slidesurl: http://alanhinds.github.io/files/2026_NYSAA_Cornell_Seminar_-_Northeast_Farmland_Market_Update.pdf
 
 ---
-Audience: ~50 Appraisers
+Audience: ~50 County Assessors
