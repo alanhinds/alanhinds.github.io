@@ -1,5 +1,5 @@
 ---
-title: "Community Property, Taxes, and the Market for Local Assets"
+title: "Community Property, Taxes, and the Market for Local Assets: Evidence from Farmland"
 collection: publications
 category: working_paper
 permalink: /publication/2026-7-25-maritalproperty
@@ -7,7 +7,7 @@ excerpt: ''
 date: 2026-7-25
 venue: 'In Progress'
 related_talk: 2025-10-02.md
-citation: 'Hinds, A., N. Miller, and A. Shew. <i>Community Property, Taxes, and the Market for Local Assets</i>. [Manuscript available upon request]'
+citation: 'Hinds, A., N. Miller, and A. Shew. <i>Community Property, Taxes, and the Market for Local Assets: Evidence from Farmland</i>. [Manuscript available upon request]'
 ---
 
 
