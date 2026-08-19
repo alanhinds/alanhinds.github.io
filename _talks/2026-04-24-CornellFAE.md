@@ -1,5 +1,5 @@
 ---
-title: "Community Property, Taxes, and Estate Planning: How Marital Property Regimes Affect Farmland Markets and the Lock-in Effect"
+title: "Community Property, Taxes, and Estate Planning: How marital property regimes affect farmland markets and the lock-in effect"
 collection: talks
 type: "Seminar"
 permalink: /talks/2026-04-24-CornellFAE
