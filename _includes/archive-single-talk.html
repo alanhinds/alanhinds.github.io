@@ -34,24 +34,25 @@
       {% endif %}
     </h2>
     {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
+      <p class="archive__item-excerpt"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-    {% if post.date %}<p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
+    {% if post.date %}<p class="archive__item-excerpt"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
+    {% if post.venue %}<p class="archive__item-excerpt"><i class="fa fa-fw fa-location-dot" aria-hidden="true"></i> {{post.type}}, {{ post.venue }},  {{post.location}}</p> {% endif %}
+    {% if post.audience %}<p class="archive__item-excerpt"><i class="fa fa-fw fa-users" aria-hidden="true"></i> Audience: {{ post.audience }}</p>{% endif %}
+    {% if post.award %}<p class="archive__item-excerpt"><i class="fa fa-fw fa-award" aria-hidden="true"></i> {{ post.award }}</p>{% endif %}
+    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | strip_html | strip_newlines }}</p>{% endif %}
     
     {% if post.slidesurl and post.related_publication %}
-      {% assign related_pub = site.publications | where_exp: "item", "item.path contains post.related_publication" | first %}
-      <p>
-        <a href="{{ post.slidesurl }}" target="_blank">Slides</a> | <a href="{{ related_pub.url }}" >Related Work</a>
-      </p>
-    {% elsif post.related_publication %}
-      {% assign related_pub = site.publications | where_exp: "item", "item.path contains post.related_publication" | first %}
-      <a href="{{ related_pub.url }}" >Related Work</a>
-
-    {% elsif post.slidesurl %}
-      <p><a href="{{ post.slidesurl }}" target="_blank">Slides</a></p>
-    {% endif %}
+  {% assign related_pub = site.publications | where_exp: "item", "item.path contains post.related_publication" | first %}
+  <p class="archive__item-links">
+    <a href="{{ post.slidesurl }}" target="_blank">Slides</a> | <a href="{{ related_pub.url }}" >Related Work</a>
+  </p>
+{% elsif post.related_publication %}
+  {% assign related_pub = site.publications | where_exp: "item", "item.path contains post.related_publication" | first %}
+  <p class="archive__item-links"><a href="{{ related_pub.url }}" >Related Work</a></p>
+{% elsif post.slidesurl %}
+  <p class="archive__item-links"><a href="{{ post.slidesurl }}" target="_blank">Slides</a></p>
+{% endif %}
 
     
   </article>

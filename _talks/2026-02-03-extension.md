@@ -7,6 +7,5 @@ venue: "Broome County Cornell Cooperative Extension Realtor Education Day"
 date: 2026-02-03
 location: "Binghamton, NY, USA"
 slidesurl: http://alanhinds.github.io/files/2026_Realtor_Education_Day_NY_Farmland_Market_and_Solar.pdf
-
+audience: '~25 Realtors'
 ---
-Audience: ~25 Realtors

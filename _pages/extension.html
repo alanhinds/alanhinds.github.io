@@ -28,5 +28,12 @@ author_profile: true
   {% endfor %}
 {% endif %}
 
-
+<!-- Extension talks/presentations pulled in from the talks collection -->
+{% assign extension_talks = site.talks | where: "type", "Extension Presentation" | sort: "date" | reverse %}
+{% if extension_talks.size > 0 %}
+  <h2>Extension Presentations</h2><hr />
+  {% for post in extension_talks %}
+    {% include archive-single-talk.html %}
+  {% endfor %}
+{% endif %}
 
