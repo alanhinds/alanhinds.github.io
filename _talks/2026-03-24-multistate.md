@@ -9,5 +9,4 @@ location: "Kansas City, MO, USA"
 related_publication: 2025-10-1-sorghum.md
 slidesurl: http://alanhinds.github.io/files/2026_SCC_76_Sorghum.pdf
 session: '"International Agriculture"'
-
 ---
