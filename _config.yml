@@ -39,7 +39,7 @@ author:
   orcid            : "http://orcid.org/0009-0003-6077-2563"
   semantic         : # URL
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  researchgate     : # URL
+  researchgate     : "https://www.researchgate.net/profile/Alan-Hinds"
   scopus           : # URL
 
   # Repositories and software development
