@@ -399,3 +399,19 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+.media-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.media-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6em;
+  margin-bottom: 1.2em;
+}
+.media-list li i.fa {
+  margin-top: 0.25em;
+  flex-shrink: 0;
+}

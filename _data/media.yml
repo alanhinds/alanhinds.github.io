@@ -1,0 +1,13 @@
+# One entry per media item. `type` is "interview", "quote", or "coverage" (for general mentions that are neither a direct quote nor an interview). `related_publication` is optional — match it to a _publications filename (with .md) to link back to that paper; omit it entirely for standalone coverage.
+- title: "SNAP cost shifts emerge as center of farm bill fight, explained"
+  url: "https://news.bgov.com/bloomberg-government-news/snap-cost-shifts-emerge-as-center-of-farm-bill-fight-explained"
+  outlet: "Bloomberg Government"
+  date: 2026-08-20
+  type: interview
+  related_publication: "2026-04-20-snapsnewreality.md"
+- title: "SNAP overhaul impacts older adults and single parents"
+  url: "https://business.cornell.edu/news/2026/08/20/snap-overhaul"
+  outlet: "Cornell Business News"
+  date: 2026-08-20
+  type: quote
+  related_publication: "2026-04-20-snapsnewreality.md"

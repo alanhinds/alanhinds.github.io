@@ -1,0 +1,42 @@
+---
+layout: archive
+title: "Media Coverage and Interviews"
+permalink: /media/
+author_profile: true
+---
+{% include base_path %}
+
+
+{% assign sorted_media = site.data.media | sort: "date" | reverse %}
+
+<ul class="media-list">
+{% for item in sorted_media %}
+  {% assign related_pub = nil %}
+  {% if item.related_publication %}
+    {% assign related_pub = site.publications | where_exp: "p", "p.path contains item.related_publication" | first %}
+  {% endif %}
+  <li>
+    {% if item.type == "interview" %}
+      <i class="fa fa-fw fa-microphone icon-color" aria-hidden="true"></i>
+    {% elsif item.type == "quote" %}
+      <i class="fa fa-fw fa-quote-right icon-color" aria-hidden="true"></i>
+    {% else %}
+      <i class="fa fa-fw fa-newspaper icon-color" aria-hidden="true"></i>
+    {% endif %}
+    <span>
+      <a href="{{ item.url }}" target="_blank">&ldquo;{{ item.title }}.&rdquo;</a>
+      <i>{{ item.outlet }},</i> {{ item.date | date: "%B %Y" }}.
+      {% if related_pub %}
+        {% assign pub_title = related_pub.title | markdownify | remove: "<p>" | remove: "</p>" | strip %}
+        {% if item.type == "interview" %}
+          (Interviewed regarding <a href="{{ base_path }}{{ related_pub.url }}">&ldquo;{{ pub_title }}.&rdquo;</a>)
+        {% elsif item.type == "quote" %}
+          (Quoted regarding <a href="{{ base_path }}{{ related_pub.url }}">&ldquo;{{ pub_title }}.&rdquo;</a>)
+        {% else %}
+          (Regarding <a href="{{ base_path }}{{ related_pub.url }}">&ldquo;{{ pub_title }}.&rdquo;</a>)
+        {% endif %}
+      {% endif %}
+    </span>
+  </li>
+{% endfor %}
+</ul>

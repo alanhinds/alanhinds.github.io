@@ -120,7 +120,31 @@ layout: default
           <p style="font-size: smaller"><a href="{{ page.bibtexurl }}">Download Bibtex</a></p>
         {% endif %}
         {% endif %}
-
+        
+        {% assign has_related = site.data.media | where_exp: "item", "item.related_publication" %}
+          {% assign page_media = has_related | where_exp: "item", "page.path contains item.related_publication" %}
+          {% if page_media.size > 0 %}
+            <h2 id="in-the-news">In the News</h2>
+            <ul class="media-list">
+            {% assign sorted_page_media = page_media | sort: "date" | reverse %}
+            {% for item in sorted_page_media %}
+              <li>
+                {% if item.type == "interview" %}
+                  <i class="fa fa-fw fa-microphone icon-color" aria-hidden="true"></i>
+                {% elsif item.type == "quote" %}
+                  <i class="fa fa-fw fa-quote-right icon-color" aria-hidden="true"></i>
+                {% else %}
+                  <i class="fa fa-fw fa-newspaper icon-color" aria-hidden="true"></i>
+                {% endif %}
+                <span>
+                  <a href="{{ item.url }}" target="_blank">{{ item.outlet }}</a>, {{ item.date | date: "%B %Y" }}: <i>{{ item.title }}</i>
+                  {% if item.type == "interview" %} (Interview){% elsif item.type == "quote" %} (Quote){% endif %}
+                </span>
+              </li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+        
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
