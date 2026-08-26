@@ -54,3 +54,24 @@ for file in g:
 # Save the map
 m = getorg.orgmap.create_map_obj()
 getorg.orgmap.output_html_cluster_map(location_dict, folder_name="talkmap", hashed_usernames=False)
+
+
+# Re-center the generated map over the continental U.S. instead of getorg's
+# default world view, since getorg doesn't expose center/zoom as a parameter.
+map_html_path = "talkmap/map.html"
+with open(map_html_path, "r") as f:
+    map_html = f.read()
+
+map_html = map_html.replace(
+    "latlng = L.latLng(30, 10);", "latlng = L.latLng(39.8, -98.6);"
+).replace(
+    "zoom: 0.7", "zoom: 3"
+).replace(
+    "maxClusterRadius: 80", "maxClusterRadius: 30"
+).replace(
+    "<span>Mouse over a cluster to see the bounds of its children and click a cluster to zoom to those bounds</span>",
+    '<p style="font-size: smaller; color: var(--global-text-color-light);">Click a cluster to zoom in and see the individual talks.</p>'
+)
+
+with open(map_html_path, "w") as f:
+    f.write(map_html)

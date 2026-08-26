@@ -40,8 +40,28 @@ var addressPoints = [
     -94.5781416
   ],
   [
-    "Community Property, Taxes, and Estate Planning: How Marital Property Regimes Affect Farmland Markets and the Lock-in Effect<br />Cornell Dyson Food and Agricultural Economics Seminar; Ithaca, NY, USA",
+    "Community Property, Taxes, and Estate Planning: How marital property regimes affect farmland markets and the lock-in effect<br />Cornell Dyson Food and Agricultural Economics Seminar; Ithaca, NY, USA",
     42.4374175,
     -76.5483724
+  ],
+  [
+    "Northeast Farmland Market Update<br />New York State Assessors Association, Cornell Seminar on Professional Development; Ithaca, NY, USA",
+    42.4374175,
+    -76.5483724
+  ],
+  [
+    "Community Property, Taxes, and Estate Planning: How marital property regimes affect farmland markets and the lock-in effect<br />2026 Agricultural & Applied Economics Association Annual Meeting; Kansas City, MO, USA",
+    39.100105,
+    -94.5781416
+  ],
+  [
+    "Do Farmers Capitalize Conservation Practices in Their Own Land Valuations?<br />2026 Agricultural & Applied Economics Association Annual Meeting; Kansas City, MO, USA",
+    39.100105,
+    -94.5781416
+  ],
+  [
+    "Community Property, Taxes, and Estate Planning: How marital property regimes affect farmland markets and the lock-in effect<br />Forest and Rangeland Taxation Meeting; Durham, NC, USA",
+    35.996653,
+    -78.9018053
   ]
 ];
