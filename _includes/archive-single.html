@@ -77,13 +77,13 @@
     {% endif %}
 
     {% if post.paperurl and post.slidesurl and post.bibtexurl %}
-      <p class="archive__item-links"><a href="{{ post.paperurl }}"><i class="fa fa-fw fa-file-pdf icon-color" aria-hidden="true"></i> Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+      <p class="archive__item-links"><i class="fa fa-fw fa-file-pdf icon-color" aria-hidden="true"></i> <a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.paperurl and post.slidesurl %}
-      <p class="archive__item-links"><a href="{{ post.paperurl }}"><i class="fa fa-fw fa-file-pdf icon-color" aria-hidden="true"></i> Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
+      <p class="archive__item-links"><i class="fa fa-fw fa-file-pdf icon-color" aria-hidden="true"></i> <a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% elsif post.paperurl and post.bibtexurl %}
-      <p class="archive__item-links"><a href="{{ post.paperurl }}"><i class="fa fa-fw fa-file-pdf icon-color" aria-hidden="true"></i> Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+      <p class="archive__item-links"><i class="fa fa-fw fa-file-pdf icon-color" aria-hidden="true"></i> <a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.paperurl %}
-      <p class="archive__item-links"><a href="{{ post.paperurl }}"><i class="fa fa-fw fa-file-pdf icon-color" aria-hidden="true"></i> Download Paper</a></p>
+      <p class="archive__item-links"><i class="fa fa-fw fa-file-pdf icon-color" aria-hidden="true"></i> <a href="{{ post.paperurl }}">Download Paper</a></p>
     {% elsif post.slidesurl and post.bibtexurl %}
       <p class="archive__item-links"><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.slidesurl %}
