@@ -8,6 +8,7 @@ date: 2026-04-20
 venue: 'Applied Economics Education and Extension (AEEE)'
 citation: 'Huang, Z., W. Zhang, and A. Hinds. 2026. "SNAP''s New Reality: Expanded Work Requirements, Cost Shifts to States, and Benefit Adjustment Changes." <i>Applied Economics Education and Extension</i> 1&ndash;8. <a href="https://doi.org/10.71162/aeee.155443">https://doi.org/10.71162/aeee.155443</a>.' 
 paperurl: 'https://www.aeeejournal.org/UserFiles/file/AEEE_Choices9%20Final%20Proof.pdf'
+embedpdf: true
 
 ---
 
