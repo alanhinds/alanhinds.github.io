@@ -36,10 +36,10 @@
     {% if post.read_time %}
       <p class="archive__item-excerpt"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-    {% if post.date %}<p class="archive__item-excerpt"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue %}<p class="archive__item-excerpt"><i class="fa fa-fw fa-location-dot" aria-hidden="true"></i> {{post.type}}, {{ post.venue }},  {{post.location}}</p> {% endif %}
-    {% if post.audience %}<p class="archive__item-excerpt"><i class="fa fa-fw fa-users" aria-hidden="true"></i> Audience: {{ post.audience }}</p>{% endif %}
-    {% if post.award %}<p class="archive__item-excerpt"><i class="fa fa-fw fa-award" aria-hidden="true"></i> {{ post.award }}</p>{% endif %}
+    {% if post.date %}<p class="archive__item-excerpt"><i class="fa fa-fw fa-calendar icon-color" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
+    {% if post.venue %}<p class="archive__item-excerpt"><i class="fa fa-fw fa-location-dot icon-color" aria-hidden="true"></i> {{post.type}}, {{ post.venue }},  {{post.location}}</p> {% endif %}
+    {% if post.audience %}<p class="archive__item-excerpt"><i class="fa fa-fw fa-users icon-color" aria-hidden="true"></i> Audience: {{ post.audience }}</p>{% endif %}
+    {% if post.award %}<p class="archive__item-excerpt"><i class="fa fa-fw fa-award icon-color" aria-hidden="true"></i> {{ post.award }}</p>{% endif %}
     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | strip_html | strip_newlines }}</p>{% endif %}
     
     {% if post.slidesurl and post.related_publication %}

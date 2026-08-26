@@ -41,25 +41,25 @@ layout: default
         {% assign has_prior = false %}
         <p class="page__date">
         {% if page.modified %}
-          <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>
+          <strong><i class="fa fa-fw fa-calendar icon-color" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time>
           {% assign has_prior = true %}
         {% elsif page.date %}
-          <strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+          <strong><i class="fa fa-fw fa-calendar icon-color" aria-hidden="true"></i>Date:</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
           {% assign has_prior = true %}
         {% endif %}
         {% if page.venue or page.location %}
           {% if has_prior %}<br>{% endif %}
-          <strong><i class="fa fa-fw fa-location-dot" aria-hidden="true"></i>Venue:</strong> {% if page.venue %}{{ page.venue }}{% endif %}{% if page.location %}, {{ page.location }}{% endif %}
+          <strong><i class="fa fa-fw fa-location-dot icon-color" aria-hidden="true"></i>Venue:</strong> {% if page.venue %}{{ page.venue }}{% endif %}{% if page.location %}, {{ page.location }}{% endif %}
           {% assign has_prior = true %}
         {% endif %}
         {% if page.audience %}
           {% if has_prior %}<br>{% endif %}
-          <strong><i class="fa fa-fw fa-users" aria-hidden="true"></i>Audience:</strong> {{ page.audience }}
+          <strong><i class="fa fa-fw fa-users icon-color" aria-hidden="true"></i> Audience:</strong> {{ page.audience }}
           {% assign has_prior = true %}
         {% endif %}
         {% if page.award %}
           {% if has_prior %}<br>{% endif %}
-          <strong><i class="fa fa-fw fa-award" aria-hidden="true"></i>Award:</strong> {{ page.award }}
+          <strong><i class="fa fa-fw fa-award icon-color" aria-hidden="true"></i> Award:</strong> {{ page.award }}
         {% endif %}
         </p>
 

@@ -45,7 +45,8 @@ html[data-theme="dark"] {
     --global-code-background-color      : #fafafa;
     --global-code-text-color            : #{$darker-gray};
     --global-fig-caption-color          : #{$light-gray};
-    --global-link-color                 : #{$link};
+    --global-icon-color                 : #{mix(#fff, $cornellian, 30%)};
+    --global-link-color                 : #{mix(#fff, $PMS-Process-Blue, 25%)};
     --global-link-color-hover           : #{$link-dark};
     --global-link-color-visited         : #{$link-light};
     --global-masthead-link-color        : #{$text};

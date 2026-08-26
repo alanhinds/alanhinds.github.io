@@ -57,7 +57,7 @@
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         
         {% elsif post.collection == 'extension' %}
-          <p class="archive__item-excerpt"><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</p>
+          <p class="archive__item-excerpt"><i class="fa fa-fw fa-calendar icon-color" aria-hidden="true"></i> {{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</p>
         
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
@@ -77,13 +77,13 @@
     {% endif %}
 
     {% if post.paperurl and post.slidesurl and post.bibtexurl %}
-      <p class="archive__item-links"><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+      <p class="archive__item-links"><a href="{{ post.paperurl }}"><i class="fa fa-fw fa-file-pdf icon-color" aria-hidden="true"></i> Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.paperurl and post.slidesurl %}
-      <p class="archive__item-links"><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
+      <p class="archive__item-links"><a href="{{ post.paperurl }}"><i class="fa fa-fw fa-file-pdf icon-color" aria-hidden="true"></i> Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
     {% elsif post.paperurl and post.bibtexurl %}
-      <p class="archive__item-links"><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+      <p class="archive__item-links"><a href="{{ post.paperurl }}"><i class="fa fa-fw fa-file-pdf icon-color" aria-hidden="true"></i> Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.paperurl %}
-      <p class="archive__item-links"><a href="{{ post.paperurl }}">Download Paper</a></p>
+      <p class="archive__item-links"><a href="{{ post.paperurl }}"><i class="fa fa-fw fa-file-pdf icon-color" aria-hidden="true"></i> Download Paper</a></p>
     {% elsif post.slidesurl and post.bibtexurl %}
       <p class="archive__item-links"><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.slidesurl %}
@@ -92,5 +92,10 @@
       <p class="archive__item-links"><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% endif %}
 
+    {% assign has_related_media = site.data.media | where_exp: "item", "item.related_publication" %}
+    {% assign post_media = has_related_media | where_exp: "item", "post.path contains item.related_publication" %}
+    {% if post_media.size > 0 %}
+      <p class="archive__item-links"><i class="fa fa-fw fa-newspaper icon-color" aria-hidden="true"></i> <a href="{{ base_path }}{{ post.url }}#in-the-news">In the News</a></p>
+    {% endif %}
   </article>
 </div>
