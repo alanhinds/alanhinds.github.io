@@ -16,6 +16,6 @@ My research is at the intersection of **agricultural finance**, **farm managemen
 
 Extension is how I translate research into resources for non-academic audiences. I author land market reports and policy briefs for producers and stakeholders, and have been invited to present these materials and findings from academic research to practitioners. I am the founder of the "Dyson Farm and Food Tour," which gives faculty and graduate students an opportunity to visit food and agriculture facilities across Cornell and New York State. These visits help motivate future research, foster connections with industry, and provide educational experiences beyond the classroom.
 
-I am on the 2026–2027 job market. My job market paper, *Community Property, Taxes, and the Market for Local Assets*, examines how state-defined marital property regimes affect farmland prices through the differential application of federal capital gains taxes. The most recent draft is available upon request.
+**I am on the 2026–2027 job market.** My job market paper, *Community Property, Taxes, and the Market for Local Assets*, examines how state-defined marital property regimes affect farmland prices through the differential application of federal capital gains taxes. The most recent draft is available upon request.
 
 ----
