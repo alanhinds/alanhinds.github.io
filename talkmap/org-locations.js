@@ -63,5 +63,10 @@ var addressPoints = [
     "Community Property, Taxes, and Estate Planning: How marital property regimes affect farmland markets and the lock-in effect<br />Forest and Rangeland Taxation Meeting; Durham, NC, USA",
     35.996653,
     -78.9018053
+  ],
+  [
+    "Do Farmers Capitalize Conservation Practices in Their Own Land Valuations?<br />2026 Midwest Extension Farm Management and Outlook Conference; Lexington, KY, USA",
+    38.0464066,
+    -84.4970393
   ]
 ];
